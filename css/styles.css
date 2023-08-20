@@ -371,22 +371,23 @@ a {
 .modal-label:hover .modal-input, 
 .modal-label:focus .modal-input {
   border: 1px solid var(--brend-color);
-  transition: border var(--transition-duration) var(--transition-timing-function);
 }
 .modal-input {
   margin-top: 4px;
   padding: 11px 12px 11px 42px;
+  transition: border var(--transition-duration) var(--transition-timing-function);
 }
 
 .modal-textarea {
   padding: 12px 16px;
   height: 120px;
   min-width: 100%;
+  transition: border var(--transition-duration) var(--transition-timing-function);
 }
 .modal-textarea:hover, 
 .modal-textarea:focus {
   border: 1px solid var(--brend-color);
-  transition: border var(--transition-duration) var(--transition-timing-function);
+
 }
 .modal-input,
 .modal-textarea {
@@ -424,6 +425,7 @@ a {
   bottom: 0;
   left: 12px;
   transform: translate(-0%, -50%);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 .input-svg svg{
   width: 100%;
@@ -432,7 +434,7 @@ a {
 .modal-label:hover .input-svg,
 .modal-label:focus .input-svg {
   fill: var(--brend-color);
-  transition: fill var(--transition-duration) var(--transition-timing-function);
+
 }
 
 /* ---------- */
