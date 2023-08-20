@@ -69,7 +69,8 @@ ul {
 
 /* Скритий елемент сторінки */
 .features .page-title,
-.category-title {
+.category-title,
+.checkbox-text {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -344,7 +345,7 @@ a {
   width: 100%;
   height: 100%;
 }
-.form-title {
+.form-text {
   text-align: center;
   color: var(--title-dark);
   font-size: 20px;
@@ -364,16 +365,28 @@ a {
   font-size: 12px;
   letter-spacing: 0.12px;
   margin-bottom: 10px;
+  position: relative;
+}
+
+.modal-label:hover .modal-input, 
+.modal-label:focus .modal-input {
+  border: 1px solid var(--brend-color);
+  transition: border var(--transition-duration) var(--transition-timing-function);
 }
 .modal-input {
   margin-top: 4px;
-  padding: 11px 12px;
+  padding: 11px 12px 11px 42px;
 }
 
 .modal-textarea {
   padding: 12px 16px;
   height: 120px;
   min-width: 100%;
+}
+.modal-textarea:hover, 
+.modal-textarea:focus {
+  border: 1px solid var(--brend-color);
+  transition: border var(--transition-duration) var(--transition-timing-function);
 }
 .modal-input,
 .modal-textarea {
@@ -388,6 +401,7 @@ a {
 .modal-checkbox {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 .checkbox-link {
   color: var(--brend-color);
@@ -402,6 +416,49 @@ a {
   text-shadow: 0.3px 0.3px 0.5px var(--brend-color), -0.3px -0.3px 0.5px var(--brend-color);
 }
 
+/* --input-svg--------------- */
+.input-svg {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  transform: translate(-0%, -50%);
+}
+.input-svg svg{
+  width: 100%;
+  height: 100%;
+}
+.modal-label:hover .input-svg,
+.modal-label:focus .input-svg {
+  fill: var(--brend-color);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+/* ---------- */
+.form-button {
+  display: flex;
+  min-height: 50px;
+  margin: 0 auto;
+  padding: 0 52px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 14 * 100%);
+  letter-spacing: 0.06em;
+  color: var(--background-light);
+  background-color: var(--brend-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #188ce8;
+}
 /* ---------------------------- */
 .features {
   padding: 94px 0;

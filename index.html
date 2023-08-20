@@ -64,34 +64,45 @@
 								<use href="./image/hero/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
 							</svg>
 						</button>
-						<h3 class="form-title">Залиште свої дані, ми вам передзвонимо</h3>
 						<form class="form">
-								<div role="group" class="modal-inputs">
-									<label class="modal-label" for="name">
-										Ім'я
-										<input class="modal-input" type="text" name="name" data-focus="#name" id="name" autofocus />
-									</label>
-									<label class="modal-label" for="tel">
-										Телефон
-										<input	class="modal-input" type="tel" name="tel" id="tel"/>
-									</label>
-									<label class="modal-label" for="email">
-										Пошта
-										<input	class="modal-input" type="email" name="email" id="email"/>
-									</label>
-									<label class="modal-label" for="comment">Коментар</label>
-									<textarea 
-									class="modal-textarea" 
-									name="comment" 
-									id="comment" 
-									style="resize: none;" 
-									placeholder="Введіть текст"
-									></textarea>
-								</div>
-							<div role="group" class="modal-checkbox">
-								<input type="checkbox" name="" id=""/>
-								<label class="checkbox-label" for="comment">Погоджуюся з розсилкою та приймаю <a class="checkbox-link" href="">Умови договору</a></label>
+							<div role="group" class="modal-inputs" aria-labelledby="contact-details-head">
+								<p class="form-text" id="contact-details-head">Залиште свої дані, ми вам передзвонимо</p>
+								<label class="modal-label" for="name">
+									<svg class="input-svg">
+										<use href="./image/modal/symbol-defs.svg#icon-person"></use>
+									</svg>
+									Ім'я
+									<input class="modal-input" type="text" name="name" id="name" autofocus />
+								</label>
+								<label class="modal-label" for="tel">
+									<svg class="input-svg">
+										<use href="./image/modal/symbol-defs.svg#icon-phone"></use>
+									</svg>
+									Телефон
+									<input	class="modal-input" type="tel" name="tel" id="tel"/>
+								</label>
+								<label class="modal-label" for="email">
+									<svg class="input-svg">
+										<use href="./image/modal/symbol-defs.svg#icon-email"></use>
+									</svg>
+									Пошта
+									<input	class="modal-input" type="email" name="email" id="email"/>
+								</label>
+								<label class="modal-label" for="comment">Коментар</label>
+								<textarea 
+								class="modal-textarea" 
+								name="comment" 
+								id="comment" 
+								style="resize: none;" 
+								placeholder="Введіть текст"
+								></textarea>
 							</div>
+							<div role="group" class="modal-checkbox" aria-labelledby="contact-details-head">
+								<p class="checkbox-text" id="contact-details-head">Погоджуюся з розсилкою та приймаю Умови договору</p>
+								<input type="checkbox" name="checkbox" id="checkbox"/>
+								<label class="checkbox-label" for="checkbox">Погоджуюся з розсилкою та приймаю <a class="checkbox-link" href="">Умови договору</a></label>
+							</div>
+							<button class="form-button" type="submit">Відправити</button>
 						</form>
 					</div>
 				</div>
