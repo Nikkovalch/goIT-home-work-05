@@ -66,32 +66,30 @@
 						</button>
 						<h3 class="form-title">Залиште свої дані, ми вам передзвонимо</h3>
 						<form class="form">
-							<div role="group">
-								<label class="modal-label" for="name" >Ім'я</label>
-								<input	class="modal-input" type="text" name="name" id="name" autofocus>
-							</div>
-							<div role="group">
-								<label class="modal-label" for="tel">Телефон</label>
-								<input	class="modal-input" type="tel" name="tel" id="tel">
-							</div>
-							<div role="group">
-								<label class="modal-label" for="email">Пошта</label>
-								<input	class="modal-input" type="email" name="email" id="email">
-							</div>
-							<div role="group">
-								<label class="modal-label" for="comment">Коментар</label>
-								<textarea 
-								class="modal-textarea" 
-								name="comment" 
-								id="comment" 
-								cols="40" 
-								rows="10" 
-								style="resize: none;" 
-								placeholder="Введіть текст"
-								></textarea>
-							</div>
+								<div role="group" class="modal-inputs">
+									<label class="modal-label" for="name">
+										Ім'я
+										<input class="modal-input" type="text" name="name" data-focus="#name" id="name" autofocus />
+									</label>
+									<label class="modal-label" for="tel">
+										Телефон
+										<input	class="modal-input" type="tel" name="tel" id="tel"/>
+									</label>
+									<label class="modal-label" for="email">
+										Пошта
+										<input	class="modal-input" type="email" name="email" id="email"/>
+									</label>
+									<label class="modal-label" for="comment">Коментар</label>
+									<textarea 
+									class="modal-textarea" 
+									name="comment" 
+									id="comment" 
+									style="resize: none;" 
+									placeholder="Введіть текст"
+									></textarea>
+								</div>
 							<div role="group" class="modal-checkbox">
-								<input type="checkbox" name="" id="">
+								<input type="checkbox" name="" id=""/>
 								<label class="checkbox-label" for="comment">Погоджуюся з розсилкою та приймаю <a class="checkbox-link" href="">Умови договору</a></label>
 							</div>
 						</form>
