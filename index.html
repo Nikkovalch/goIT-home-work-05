@@ -67,27 +67,31 @@
 						<form class="form">
 							<div role="group" class="modal-inputs" aria-labelledby="contact-details-head">
 								<p class="form-text" id="contact-details-head">Залиште свої дані, ми вам передзвонимо</p>
+
 								<label class="modal-label" for="name">
+									<span class="span">Ім'я</span>
+									<input class="modal-input" type="text" name="name" id="name" autofocus />
 									<svg class="input-svg">
 										<use href="./image/svg/symbol-defs-modal.svg#icon-person"></use>
 									</svg>
-									Ім'я
-									<input class="modal-input" type="text" name="name" id="name" autofocus />
 								</label>
+								
 								<label class="modal-label" for="tel">
+									<span class="span">Телефон</span>
+									<input	class="modal-input" type="tel" name="tel" id="tel"/>
 									<svg class="input-svg">
 										<use href="./image/svg/symbol-defs-modal.svg#icon-phone"></use>
 									</svg>
-									Телефон
-									<input	class="modal-input" type="tel" name="tel" id="tel"/>
 								</label>
+
 								<label class="modal-label" for="email">
+									<span class="span">Пошта</span>
+									<input	class="modal-input" type="email" name="email" id="email"/>
 									<svg class="input-svg">
 										<use href="./image/svg/symbol-defs-modal.svg#icon-email"></use>
 									</svg>
-									Пошта
-									<input	class="modal-input" type="email" name="email" id="email"/>
 								</label>
+
 								<label class="modal-label" for="comment">Коментар</label>
 								<textarea 
 								class="modal-textarea" 

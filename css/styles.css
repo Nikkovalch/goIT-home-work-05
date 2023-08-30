@@ -367,34 +367,40 @@ a {
   margin-bottom: 10px;
   position: relative;
 }
-
-.modal-label:hover .modal-input, 
+.modal-label:hover .modal-input,
 .modal-label:focus .modal-input {
-  border: 1px solid var(--brend-color);
-}
-.modal-input {
-  margin-top: 4px;
-  padding: 11px 12px 11px 42px;
-  transition: border var(--transition-duration) var(--transition-timing-function);
+  outline: 2px solid var(--brend-color);
 }
 
+.modal-input {
+  padding: 10px 0px 10px 35px;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+  outline: 1px solid var(--most-of-color-text);
+}
+.modal-input:hover,
+.modal-input:focus {
+  outline: 2px solid var(--brend-color);
+}
+.modal-input:hover + .input-svg, 
+.modal-input:focus + .input-svg {
+  fill: var(--brend-color);
+}
 .modal-textarea {
+  border-radius: 5px;
+  background-color: white;
   padding: 12px 16px;
   height: 120px;
   min-width: 100%;
-  transition: border var(--transition-duration) var(--transition-timing-function);
+  border: none;
+  outline: 1px solid var(--most-of-color-text);
 }
-.modal-textarea:hover, 
-.modal-textarea:focus {
-  border: 1px solid var(--brend-color);
+.modal-textarea:hover,
+.modal-textarea :focus {
+  outline: 2px solid var(--brend-color);
+}
 
-}
-.modal-input,
-.modal-textarea {
-  border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.20);
-  background-color: var(--background-light);
-}
 /* ---checkbox------------------------- */
 .checkbox-label {
   margin-left: 10px;
@@ -430,11 +436,6 @@ a {
 .input-svg svg{
   width: 100%;
   height: 100%;
-}
-.modal-label:hover .input-svg,
-.modal-label:focus .input-svg {
-  fill: var(--brend-color);
-
 }
 
 /* ---------- */
